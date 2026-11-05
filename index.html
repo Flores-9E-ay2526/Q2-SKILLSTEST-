@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+</head>
+<body>  
+    
+    <style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f7f6;
+margin: 0;
+padding: 50px;
+display: flex;
+justify-content: center;
+}
+.container {
+background: #ffffff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+}
+h2 {
+text-align: center;
+color: #333;
+margin-bottom: 20px;
+}
+.input-group {
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+input[type="text"] {
+flex: 1;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+}
+button {
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+}
+button:hover {
+background-color: #0056b3;
+}
+#output {
+background: #e9ecef;
+padding: 15px;
+border-radius: 6px;
+margin-top: 15px;
+min-height: 80px;
+}
+.hint {
+font-size: 12px;
+color: #666;
+text-align: center;
+margin-top: 15px;
+ }
+</style>
+</head>
+<body>
+
+
+<script type="py" src="./main.py"></script>
+
+<div class="container">
+<h2>Non-Metal Finder</h2>
+        
+<div class="input-group">
+<input type="text" id="symbol-input" placeholder="Enter symbol (e.g., C, O, Cl)">
+<button py-click="search_element">Search</button>
+</div>
+
+<div id="output"></div>
+
+<div class="hint">
+Try searching symbols like: <strong>H, C, N, O, Cl</strong>
+</div>
+</div>
+
+</body>
+</html>
